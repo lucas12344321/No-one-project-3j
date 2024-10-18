@@ -7,7 +7,9 @@ async function quantidadeDeUsuarios(){
     const nomeDasRedes = Object.keys(dados);
     const quantidadeDeUsuarios = Object.values(dados);
 
-    const infos = {
+    const infos = [
+
+     {
         x: nomeDasRedes,
         y: quantidadeDeUsuarios,
         type: 'bar',
@@ -15,6 +17,7 @@ async function quantidadeDeUsuarios(){
             color: getCSS('--cor-primaria')
         }
     }
+]
     const layout = {
         plot_bgcolor: getCSS('--cor-de-fundo'),
         paperr_bgcolor: getCSS('--cor-de-fundo'),
