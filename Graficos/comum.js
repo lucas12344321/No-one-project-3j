@@ -2,6 +2,10 @@ const getCSS = (variavel) => {
     return getComputedStyle(document.body).getPropertyValue(variavel)
 }
 
-export {
-    getCSS
+const tickfont = {
+    color: getCSS('--cor-primaria'),
+    size: 16,
+    family: getCSS('--fonte')
 }
+
+export {getCSS,tickfont}
