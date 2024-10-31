@@ -23,12 +23,30 @@ async function quantidadeDeUsuarios(){
         plot_bgcolor: getCSS('--cor-de-fundo'),
         paperr_bgcolor: getCSS('--cor-de-fundo'),
         title: {
-            Text: 'Redes sociais com mais usuários no mundo',
+            text: 'Redes sociais com mais usuários no mundo',
             x: 0,
             font:{
                 color: getCSS('--cor-primaria'),
                 family: getCSS('--fonte'),
                 size: 30
+            }
+        },
+        xaxis: {
+            tickfont: tickfont,
+            title:{
+                text: 'Nome das redes sociais',
+                font: {
+                    color: getCSS('--cor-segundaria')
+                }
+            }
+        },
+        yaxis:{
+            tickfont: tickfont,
+            title:{
+                text: 'Milhões de usuarios ativos',
+                font: {
+                    color: getCSS(--cor-segundaria)
+                }
             }
         }
     }
